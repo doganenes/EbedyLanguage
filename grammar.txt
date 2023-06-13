@@ -1,0 +1,28 @@
+<program>         => <statement_list>
+
+<statement_list>  => <statement> ";" <statement_list>
+                  | <statement> ";"
+                  | ε
+
+<statement>       => <assignment_statement>
+                  | <expression>
+
+<assignment_statement> => <identifier> "=" <expression>
+
+<expression>      => <term> "+" <expression>
+                  | <term> "-" <expression>
+                  | <term>
+
+<term>            => <factor> "*" <term>
+                  | <factor> "/" <term>
+                  | <factor>
+
+<factor>          => <identifier>
+                  | <number>
+                  | "(" <expression> ")"
+
+<identifier>      => <letter> { <letter> | <digit> }
+<number>          => <digit> { <digit> }
+
+<letter>          => A | B | C | ... | Z | a | b | c | ... | z
+<digit>           => 0 | 1 | 2 | ... | 9
