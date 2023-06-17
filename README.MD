@@ -10,7 +10,7 @@ The steps required:
 * These example code files should be read by your modified lex and syntax analysis source codes.
 * The modified code should give a proper output for the input source codes of your language.
 
-# Outputs
+## Outputs
 example1.txt
 ![output-1](https://github.com/doganenes/eLibraryApplication/assets/86846812/f9e1aae4-1472-4a96-8ef0-72e51d522d74)
 
